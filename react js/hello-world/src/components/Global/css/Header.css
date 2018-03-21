@@ -1,7 +1,7 @@
 
 .Header {
   background-color: #222;
-  height: 150px;
+  height: 160px;
   padding: 20px;
   color: white;
   text-align: center;
@@ -13,6 +13,16 @@
   height: 80px;
 }
 
+.Header-menu {
+  padding: 0;
+  margin:0;
+  list-style: none;
+}
+
+.Header-menu li{
+  display: inline-block;
+  padding-right: 18px;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
