@@ -1,5 +1,6 @@
 //Dependencies
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 //Components
 import Header from './Global/Header';
@@ -11,11 +12,17 @@ import items from '../data/menu';
 
 
 class App extends Component {
+  static propTypes = {
+    children:PropTypes.object.isRequired
+  };
+
+
   render() {
+    const {children} = this.props;
     return (
       <div className="App">
         <Header title="Developer" items={items}/>
-        <Content/>
+        <Content body={children} />
         <Footer copyright="&copy; Developer 2018"/>
       </div>
     );
